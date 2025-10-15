@@ -57,6 +57,7 @@ Launch Browser With Clean Profile
     Call Method    ${options}    add_argument    --disable-infobars
 #    Call Method    ${options}    add_argument    --disable-features=AutofillServerCommunication,PasswordCheck
     Call Method    ${options}    add_argument    --incognito
+    Call Method    ${options}    add_argument    --headless
 
     Create WebDriver    Chrome    options=${options}
 
